@@ -1,0 +1,17 @@
+.bg-1{
+    background-color: aqua;
+    background-image: url('../images/bg-clouds.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .wrapper .card1 {
+    background-color: aquamarine;
+    width: 100%;
+    top: 300px;
+  }
+  .plus-icon{
+    color: white;
+
+  }
