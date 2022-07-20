@@ -46,4 +46,7 @@ body{
     width: 100%;
     background-color: rgb(46, 46, 46)!important;
   }
-
+.aquar{
+  background-color: burlywood;
+  border-radius: 50%;
+}

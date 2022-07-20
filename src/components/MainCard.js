@@ -8,7 +8,20 @@ import Select from 'react-select';
 import aztroApi from '../../src/api/aztroApi';
 import axios from 'axios';
 import zodiacImage from './zodiacImages';
- const MainCard = (props) => {
+import aquarius from '../images/aquarius.png';
+import pisces from '../images/pisces.png';
+import cancer from '../images/cancer.png';
+import capricorn  from '../images/capricorn.png';
+import gemini from '../images/gemini.png';
+import leo from '../images/leo.png';
+import libra from '../images/libra.png';
+import sagittarius from '../images/sagittarius.png';
+import scorpio from '../images/scorpio.png';
+import taurus from '../images/taurus.png';
+import virgo from '../images/virgo.png';
+import aries from '../images/aries.png';
+
+ const MainCard = () => {
 
 
   const [select1, setSelect1] = useState(null);
@@ -53,7 +66,34 @@ import zodiacImage from './zodiacImages';
       <div className='d-flex justify-content-center card card2 mb-3'>
           <div className='row w-100'>
             <div className='col-lg-2'>
-              <img src={props.aquarius.image} alt=""/>
+              <div className='aquar'>
+              <img src={aquarius} alt=""/>
+              </div>
+            </div>
+            <div className='col-lg-2'>
+              <div className='aquar'>
+              <img src={aries} alt=""/>
+              </div>
+            </div>
+            <div className='col-lg-2'>
+              <div className='aquar'>
+              <img src={capricorn} alt=""/>
+              </div>
+            </div>
+            <div className='col-lg-2'>
+              <div className='aquar'>
+              <img src={pisces} alt=""/>
+              </div>
+            </div>
+            <div className='col-lg-2'>
+              <div className='aquar'>
+              <img src={cancer} alt=""/>
+              </div>
+            </div>
+            <div className='col-lg-2'>
+              <div className='aquar'>
+              <img src={libra} alt=""/>
+              </div>
             </div>
           </div>
       </div>
