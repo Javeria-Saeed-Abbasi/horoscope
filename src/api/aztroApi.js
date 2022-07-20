@@ -1,5 +1,5 @@
-import axios from 'axios'
+import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'https://aztro.sameerkumar.website?sign=capricorn&day=today',
-});
+  baseURL: 'https://aztro.sameerkumar.website/?sign=capricorn&day=today',
+}); 
