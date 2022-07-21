@@ -1,52 +1,152 @@
-body{
-    overflow-x: hidden;
+@font-face {
+  font-family: "Bangers-Regular";
+  src: url('../fonts/Bangers-Regular.ttf');
 }
+@font-face {
+  font-family: "Gochi";
+  src: url('../fonts/GochiHand-Regular.ttf');
+}
+@font-face {
+  font-family: "Poppins-Med";
+  src: url('../fonts/Poppins-Medium.ttf');
+}
+body {
+  overflow-x: hidden;
+}
+
 .bg-1{
-    background-color: aqua;
-    background-image: url('../images/bg-clouds.jpg');
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-  }
-  /* .wrapper .card1 {
+  background-color: aqua;
+  background-image: url('../images/bg-clouds.jpg');
+  width: 100%;
+  height:900px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .wrapper .card1 {
     background-color: transparent;
     width: 100%;
     top: 300px;
     overflow: hidden;
   } */
-  .form-select{
+.form-select {
   margin: 0 auto;
-  }
-  .plus-icon{
-    color: white;
-  }
-  .img-horo-1{
-    background-color: blueviolet;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  .img-horo-1 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .card2{
-    transform: translateY(20%);
-    width: 100%;
-    height: 400px;
-    background-image: url('../../src/images/bg2.jpg');
-    background-position: center;
-    background-size: cover;
-  }
-  .card1{
-    transform: translateY(60%);
-    min-height: 200px;
-    width: 100%;
-    background-color: rgb(46, 46, 46)!important;
-  }
-.aquar{
+}
+
+.plus-icon {
+  color: white;
+}
+
+.img-horo-1 {
+  background-color: blueviolet;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.img-horo-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card2 {
+  transform: translateY(0%);
+  position: relative;
+  width: 80%;
+  height: 550px;
+  background-image: url('../../src/images/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+.card2::before{
+  content: '';
+  position: absolute;
+  background-color: #3b2c64;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.card1 {
+  transform: translateY(60%);
+  min-height: 200px;
+  width: 100%;
+  background-color: rgb(46, 46, 46) !important;
+}
+
+.aquar {
   background-color: burlywood;
   border-radius: 50%;
+  width: 160px;
+  height: 147px;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.aquar:hover {
+  background-color: rgb(115, 219, 223);
+  cursor: pointer;
+
+}
+.aquar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sbmt-btn button{
+  border-radius: 0px;
+}
+
+.wrapper h1, .wrapper2 h3{
+  font-family: 'Bangers-Regular';
+  color: white;
+  font-size: 5rem;
+}
+
+.horo-name{
+  background-color: white;
+  border-radius: 20px;
+  height: 40px;
+}
+.horo-name button{
+  border: none;
+  background: transparent;
+  font-family: 'Gochi';
+  font-size: 1.7rem;
+  color: #212529;
+}
+.horo-name h5{
+  font-family: 'Gochi';
+  font-size: 1.7rem;
+}
+.horo-name:hover{
+  cursor: pointer;
+}
+.date-day{
+  font-family: 'Bangers-Regular';
+  color: white;
+  font-size: 2rem;
+}
+
+.wrapper2 {
+  /* position: relative; */
+  width: 100%;
+  height: 900px;
+  background-image: url('../../src/images/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper2 .card{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
