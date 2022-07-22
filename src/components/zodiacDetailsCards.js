@@ -20,8 +20,8 @@ import taurus from '../images/taurus.png'
 import virgo from '../images/virgo.png'
 import aries from '../images/aries.png'
 
-const ZodiacDetailsCards = ({ props }) => {
-  console.log(props)
+const ZodiacDetailsCards = ({ data }) => {
+  console.log(data)
   const handleInput = async (e) => {
     const value1 = e.target.value
     console.log(e.target.value)
