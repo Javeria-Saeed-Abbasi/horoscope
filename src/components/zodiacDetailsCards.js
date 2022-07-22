@@ -6,7 +6,7 @@ import plus_img from '../images/icon-plus.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Select from 'react-select'
 import aztroApi from '../api/aztroApi'
-import axios from 'axios'
+import axios from 'axios';
 import aquarius from '../images/aquarius.png'
 import pisces from '../images/pisces.png'
 import cancer from '../images/cancer.png'
