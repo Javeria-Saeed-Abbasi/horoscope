@@ -38,15 +38,19 @@ const ZodiacDetailsCards = ({ data }) => {
     console.log(resp.data.date_range)
   }
   return (
-    <div className="wrapper2">
-      <div className="container">
-        <div className="bg2">
-          <div className="card card3">
-            <h3 className="text-center">{/* <p>{data.color}</p> */}</h3>
-          </div>
+    <div className='wrapper2'>
+    <div className='container'>
+   
+            <div className='bg2'>
+              
+                <div className='card card3'>
+                <h3 className='text-center'>
+                    YOUR HOROSCOPE |  
+                </h3>
+                </div>
+            </div>
         </div>
       </div>
-    </div>
   )
 }
 
