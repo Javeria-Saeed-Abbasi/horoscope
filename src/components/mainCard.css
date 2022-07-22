@@ -10,6 +10,10 @@
   font-family: "Poppins-Med";
   src: url('../fonts/Poppins-Medium.ttf');
 }
+@font-face {
+  font-family: "Edu-Med";
+  src: url('../fonts/Edu.ttf');
+}
 body {
   overflow-x: hidden;
 }
@@ -18,7 +22,7 @@ body {
   background-color: aqua;
   background-image: url('../images/bg-clouds.jpg');
   width: 100%;
-  height:900px;
+  min-height:800px;
   background-position: center;
   background-size: cover;
 }
@@ -54,7 +58,7 @@ body {
   transform: translateY(0%);
   position: relative;
   width: 80%;
-  height: 550px;
+  min-height: 550px;
   background-image: url('../../src/images/bg2.jpg');
   background-position: center;
   background-size: cover;
@@ -135,7 +139,7 @@ body {
 .wrapper2 {
   /* position: relative; */
   width: 100%;
-  height: 900px;
+  min-height: 800px;
   background-image: url('../../src/images/bg2.jpg');
   background-position: center;
   background-size: cover;
@@ -149,4 +153,53 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.zodiac-img{
+  background-color: #4fbdb0;
+  border-radius: 50%;
+  width:199px;
+  height: 204px;
+  z-index: 100;
+  margin: 0 auto;
+}
+.zodiac-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card3 h4{
+  font-family: "Bangers-Regular";
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+.card3 h4 span{
+  color: white;
+}
+.card3 h4.yellow{
+  color: #e19f3d;
+}
+.details{
+  width: 60%;
+}
+.card3 h4.purple{
+  color: #ab07ff;
+}
+.card3 .descrp-det{
+  font-size: 1.3rem;
+}
+.card3 h4.descrp{
+  color: darkkhaki;
+}
+.card3 span{
+  font-family: "Edu-Med";
+}
+.card3 .lucky-numb{
+  color: #0b81e7;
+}
+.card3 .lucky-time{
+  color: #e7e00b;
+}
+.card3 .mood{
+  color: #ed5912;
 }

@@ -31,6 +31,7 @@ import ZodiacDetailsCards from './zodiacDetailsCards'
 const MainCard = () => {
   const [zodiaView, setZodiacView] = useState(false)
   const [data, setData] = useState(1)
+
   const weekday = [
     'Sunday',
     'Monday',
@@ -57,7 +58,7 @@ const MainCard = () => {
   //   console.log(e.value);
   //   setSelect2(e.value)
   // }
-  const handleInput = async (e) => {
+  const handleInput = async (e , image) => {
     const value1 = e.target.value
     console.log(e.target.value)
     const resp = await axios.post(
@@ -85,8 +86,12 @@ const MainCard = () => {
     console.log(resp.data.lucky_time)
     // mood
     const mood = resp.data.mood
-    console.log(resp.data.mood)
-    setZodiacView(true)
+    console.log(resp.data.mood);
+setTimeout(() => {
+  setData({...resp.data , i : image});
+  setZodiacView(true)
+}, 1000);
+
   }
   // const handleSubmit = async () => {
   //   const resp = await axios.post(`https://aztro.sameerkumar.website/?sign=${select1}&day=today`);
@@ -143,7 +148,7 @@ const MainCard = () => {
                           type="submit"
                           value={'aquarius'}
                           onClick={(e) => {
-                            handleInput(e)
+                            handleInput(e , aquarius)
                           }}
                         >
                           Aquarius
@@ -161,7 +166,7 @@ const MainCard = () => {
                       type="submit"
                       value={'aries'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, aries)
                       }}
                     >
                       Aries
@@ -177,7 +182,7 @@ const MainCard = () => {
                       type="submit"
                       value={'capricorn'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, capricorn)
                       }}
                     >
                       Capricorn
@@ -193,7 +198,7 @@ const MainCard = () => {
                       type="submit"
                       value={'pisces'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, pisces)
                       }}
                     >
                       Pisces
@@ -209,7 +214,7 @@ const MainCard = () => {
                       type="submit"
                       value={'cancer'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, cancer)
                       }}
                     >
                       Cancer
@@ -225,7 +230,7 @@ const MainCard = () => {
                       type="submit"
                       value={'libra'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, libra)
                       }}
                     >
                       Libra
@@ -243,7 +248,7 @@ const MainCard = () => {
                       type="submit"
                       value={'sagittarius'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, sagittarius)
                       }}
                     >
                       Sagittarius
@@ -259,7 +264,7 @@ const MainCard = () => {
                       type="submit"
                       value={'gemini'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, gemini)
                       }}
                     >
                       Gemini
@@ -275,7 +280,7 @@ const MainCard = () => {
                       type="submit"
                       value={'scorpio'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, scorpio)
                       }}
                     >
                       Scorpio
@@ -291,7 +296,7 @@ const MainCard = () => {
                       type="submit"
                       value={'taurus'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, taurus)
                       }}
                     >
                       Taurus
@@ -308,7 +313,7 @@ const MainCard = () => {
                       type="submit"
                       value={'virgo'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, virgo)
                       }}
                     >
                       Virgo
@@ -324,7 +329,7 @@ const MainCard = () => {
                       type="submit"
                       value={'leo'}
                       onClick={(e) => {
-                        handleInput(e)
+                        handleInput(e, leo)
                       }}
                     >
                       Leo

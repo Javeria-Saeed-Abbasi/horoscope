@@ -20,8 +20,8 @@ import taurus from '../images/taurus.png'
 import virgo from '../images/virgo.png'
 import aries from '../images/aries.png'
 
-const ZodiacDetailsCards = ({ data }) => {
-  console.log(data)
+const ZodiacDetailsCards = ({e , data}) => {
+  console.log(e, data)
   const handleInput = async (e) => {
     const value1 = e.target.value
     console.log(e.target.value)
@@ -41,13 +41,54 @@ const ZodiacDetailsCards = ({ data }) => {
     <div className='wrapper2'>
     <div className='container'>
    
-            <div className='bg2'>
+            <div className='bg2 py-5'>
               
                 <div className='card card3'>
-                <h3 className='text-center'>
-                    YOUR HOROSCOPE |  
+                <h3 className='text-center text-white'>
+                    YOUR DAILY HOROSCOPE
                 </h3>
-                </div>
+                <div className='zodiac-img'>
+                  <img src={data.i} alt=""/>
+                  <span className='h-3'>
+                    {}
+                  </span>
+                  </div>
+               
+                  <div className='details mx-auto text-left py-5'>
+                  <div>
+                    <h4 className='yellow text-center'>
+                      Lucky Color: <span className=''>{data.color}</span>
+                    </h4>
+                  </div>
+                  <div>
+                    <h4 className='purple text-center'>
+                    Compatibility: <span className=''>{data.compatibility}</span>
+                    </h4>
+                  </div>
+                  <div>
+                    <h4 className='descrp'>
+                    Description: <span className='descrp-det'>{data.description}</span>
+                    </h4>
+                  </div>
+                  <div>
+                    <h4 className='lucky-numb text-center'>
+                      Lucky Number: <span className=''>{data.lucky_number}</span>
+                    </h4>
+                  </div>
+                  <div>
+                    <h4 className='lucky-time text-center'>
+                      Lucky Time: <span className=''>{data.lucky_time}</span>
+                    </h4>
+                  </div>       
+                  <div>
+                    <h4 className='mood text-center'>
+                    Mood: <span className=''>{data.mood}</span>
+                    </h4>
+                  </div>        
+
+                  </div>
+                 
+                 </div>
             </div>
         </div>
       </div>
