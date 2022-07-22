@@ -45,7 +45,7 @@ import aries from '../images/aries.png';
               
                 <div className='card card3'>
                 <h3 className='text-center'>
-                    YOUR HOROSCOPE   | {} 
+                    YOUR HOROSCOPE |  
                 </h3>
                 </div>
             </div>
